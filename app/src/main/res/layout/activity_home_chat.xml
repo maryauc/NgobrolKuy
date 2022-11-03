@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/gradient_drawable"
+tools:context=".HomeChatActivity">
+    <LinearLayout
+        android:id="@+id/ngobrolKuyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="24dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngobrol"
+            android:textSize="16pt"
+            android:fontFamily="@font/redhatdisplay_regular"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Kuy"
+            android:textSize="16pt"
+            android:fontFamily="@font/redhatdisplay_regular"
+            android:textStyle="bold"
+            android:textColor="@color/pink"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/ngobrolKuyTitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="125dp"
+        >
+
+        <ImageView
+            android:id="@+id/setting"
+            android:layout_width="140px"
+            android:layout_height="140px"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            />
+    </LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/ngobrolKuyTitle"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <LinearLayout
+        android:id="@+id/List"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/ngobrolKuyTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/foto"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:src="@drawable/profile_placeholder"
+                app:cardCornerRadius="40dp"
+                android:backgroundTint="@color/white"/>
+
+            <LinearLayout
+                android:id="@+id/chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5pt">
+                <TextView
+                    android:id="@+id/firstchat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Juned"
+                    android:textSize="10pt"
+                    android:fontFamily="@font/redhatdisplay_regular"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="8pt"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bro nongkrong yuk!"
+                    android:textSize="6pt"
+                    android:fontFamily="@font/redhatdisplay_regular"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="8pt"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18:30"
+                android:layout_marginLeft="100dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/firstchat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:src="@drawable/profile_placeholder"
+                app:cardCornerRadius="40dp"
+                android:backgroundTint="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5pt">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Juned"
+                    android:textSize="10pt"
+                    android:fontFamily="@font/redhatdisplay_regular"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="8pt"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bro nongkrong yuk!"
+                    android:textSize="6pt"
+                    android:fontFamily="@font/redhatdisplay_regular"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="8pt"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18:30"
+                android:layout_marginLeft="100dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout><LinearLayout
+        android:id="@+id/firstchat3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:src="@drawable/profile_placeholder"
+            app:cardCornerRadius="40dp"
+            android:backgroundTint="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5pt">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Juned"
+                android:textSize="10pt"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8pt"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bro nongkrong yuk!"
+                android:textSize="6pt"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8pt"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18:30"
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout><LinearLayout
+        android:id="@+id/firstchat4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:src="@drawable/profile_placeholder"
+            app:cardCornerRadius="40dp"
+            android:backgroundTint="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5pt">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Juned"
+                android:textSize="10pt"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8pt"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bro nongkrong yuk!"
+                android:textSize="6pt"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8pt"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18:30"
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout><LinearLayout
+        android:id="@+id/firstchat5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:src="@drawable/profile_placeholder"
+            app:cardCornerRadius="40dp"
+            android:backgroundTint="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5pt">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Juned"
+                android:textSize="10pt"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8pt"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bro nongkrong yuk!"
+                android:textSize="6pt"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8pt"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18:30"
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout><LinearLayout
+        android:id="@+id/firstchat6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:src="@drawable/profile_placeholder"
+            app:cardCornerRadius="40dp"
+            android:backgroundTint="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5pt">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Juned"
+                android:textSize="10pt"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8pt"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bro nongkrong yuk!"
+                android:textSize="6pt"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8pt"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18:30"
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout><LinearLayout
+        android:id="@+id/firstchat7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:src="@drawable/profile_placeholder"
+            app:cardCornerRadius="40dp"
+            android:backgroundTint="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5pt">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Juned"
+                android:textSize="10pt"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8pt"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bro nongkrong yuk!"
+                android:textSize="6pt"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8pt"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18:30"
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout><LinearLayout
+        android:id="@+id/firstchat8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:src="@drawable/profile_placeholder"
+            app:cardCornerRadius="40dp"
+            android:backgroundTint="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5pt">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Juned"
+                android:textSize="10pt"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8pt"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bro nongkrong yuk!"
+                android:textSize="6pt"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8pt"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18:30"
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout><LinearLayout
+        android:id="@+id/firstchat9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:src="@drawable/profile_placeholder"
+            app:cardCornerRadius="40dp"
+            android:backgroundTint="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5pt">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Juned"
+                android:textSize="10pt"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8pt"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bro nongkrong yuk!"
+                android:textSize="6pt"
+                android:fontFamily="@font/redhatdisplay_regular"
+                android:textColor="@color/white"
+                android:layout_marginLeft="8pt"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18:30"
+            android:layout_marginLeft="100dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:src="@drawable/profile_placeholder"
+                app:cardCornerRadius="40dp"
+                android:backgroundTint="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5pt">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ligma"
+                    android:textSize="10pt"
+                    android:fontFamily="@font/redhatdisplay_regular"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="8pt"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bales"
+                    android:textSize="6pt"
+                    android:fontFamily="@font/redhatdisplay_regular"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="8pt"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18:30"
+                android:layout_marginLeft="160dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

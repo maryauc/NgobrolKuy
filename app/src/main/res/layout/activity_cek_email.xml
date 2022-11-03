@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_drawable"
+    tools:context=".CekEmailActivity">
+
+    <ImageView
+        android:id="@+id/backIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/cekEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cek Email"
+        android:textSize="16pt"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/textEmail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Link reset password telah dikirim."
+        android:textSize="10pt"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/cekEmail"
+        app:layout_constraintStart_toStartOf="@+id/cekEmail"
+        app:layout_constraintTop_toBottomOf="@+id/cekEmail"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/textEmail2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silakan cek inbox Anda"
+        android:textSize="8pt"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/cekEmail"
+        app:layout_constraintStart_toStartOf="@+id/cekEmail"
+        app:layout_constraintTop_toBottomOf="@+id/textEmail1"
+        android:layout_marginTop="10dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="32dp"
+        android:backgroundTint="@color/pink"
+        app:layout_constraintTop_toBottomOf="@id/textEmail2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:fontFamily="@font/redhatdisplay_regular"
+            android:textStyle="bold"
+            android:textSize="12pt"
+            android:textColor="@color/white"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

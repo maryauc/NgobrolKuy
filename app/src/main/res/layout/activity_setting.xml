@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_drawable"
+    tools:context=".SettingActivity">
+
+    <ImageView
+        android:id="@+id/backIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Setting"
+        android:textSize="16pt"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/foto"
+        android:src="@drawable/man"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintEnd_toEndOf="@+id/setting"
+        app:layout_constraintStart_toStartOf="@+id/setting"
+        app:layout_constraintTop_toBottomOf="@+id/setting"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        />
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jamet@mail.com"
+        android:textSize="10pt"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/foto"
+        app:layout_constraintStart_toStartOf="@+id/foto"
+        app:layout_constraintTop_toBottomOf="@+id/foto"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jametkece123"
+        android:textSize="8pt"
+        android:fontFamily="@font/redhatdisplay_regular"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/username"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        android:layout_marginTop="10dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="32dp"
+        android:backgroundTint="@color/pink"
+        app:layout_constraintTop_toBottomOf="@id/password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:id="@+id/ubah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ubah Display"
+            android:fontFamily="@font/redhatdisplay_regular"
+            android:textStyle="bold"
+            android:textSize="12pt"
+            android:textColor="@color/white"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
